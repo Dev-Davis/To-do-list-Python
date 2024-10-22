@@ -9,6 +9,9 @@ task3 = input(user_prompt)
 tasks = [task1, task2, task3]
 print(tasks)
 
+# shows the type
+print(type(tasks))
+
 # prints user input on the screen
 # print(text)
 
