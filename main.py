@@ -1,17 +1,24 @@
-# prompt for user
-user_prompt = 'Enter a task: '
+todos = []
 
-# stores user input in a variable
-task1 = input(user_prompt)
-task2 = input(user_prompt)
-task3 = input(user_prompt)
+while True:
+    user_action = input("Type add, show, edit, or exit: ")
+    user_action = user_action.strip()
 
-tasks = [task1, task2, task3]
-print(tasks)
+    match user_action:
+        case 'add':
+            todo = input("Enter a task: ")
+            todos.append(todo)
+        case 'show':
+            for item in todos:
+                print(item)
+        case 'edit':
+            number = int(input('Number of item to edit: '))
+            number = number - 1
+            new_task = input('Enter new task: ')
+            todos[number] = new_task
+        case 'exit':
+            break
 
-# shows the type
-print(type(tasks))
+print("Bye!")
 
-# prints user input on the screen
-# print(text)
 
