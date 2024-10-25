@@ -1,4 +1,9 @@
 # # print the 3rd serial number from the list
+products = ['table', 'chair', 'door']
+
+for index, item in enumerate(products):
+    print(index, ":", item)
+
 
 # mood = "Happy"
 # strength = 99.9
