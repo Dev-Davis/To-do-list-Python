@@ -4,9 +4,9 @@
 # print(serials[2])
 
 # # for loop
-filenames = ["1.Raw Data.txt", "2.Reports.txt", "3.Presentations.txt"]
-print(filenames)
-print(type(filenames))
+# filenames = ["1.Raw Data.txt", "2.Reports.txt", "3.Presentations.txt"]
+# print(filenames)
+# print(type(filenames))
 #
 # for filename in filenames:
 #     newName = filename.replace(".", "-", 1)
@@ -14,6 +14,13 @@ print(type(filenames))
 #     print(newName)
 
 # tuple
-filenames2 = ("1.Raw Data.txt", "2.Reports.txt", "3.Presentations.txt")
-print(filenames2)
-print(type(filenames2))
+# filenames2 = ("1.Raw Data.txt", "2.Reports.txt", "3.Presentations.txt")
+# print(filenames2)
+# print(type(filenames2))
+
+# append
+seconds = [1.23, 1.45, 1.02]
+current = 1.11
+
+seconds.append(current)
+print(seconds)
